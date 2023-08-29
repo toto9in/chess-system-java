@@ -6,7 +6,7 @@ import chess.pieces.Rook;
 import chess.pieces.King;
 
 public class ChessMatch {
-    
+
     private Board board;
 
     public ChessMatch() {
@@ -25,7 +25,7 @@ public class ChessMatch {
         return matrix;
     }
 
-    private void InitialSetup () {
+    private void InitialSetup() {
         board.placePiece(new Rook(board, Color.WHITE), new Position(2, 1));
         board.placePiece(new King(board, Color.WHITE), new Position(0, 4));
         board.placePiece(new King(board, Color.WHITE), new Position(7, 4));
